@@ -21,7 +21,7 @@ print("Splitting the document...")
 splitter = RecursiveCharacterTextSplitter(chunk_size = 1200,chunk_overlap = 100)
 print("creating embeddings for the chunks")
 embeddings = OllamaEmbeddings(model="sam860/granite-embedding-english:125m-Q8_0")
-
+print("Embedding creation complete!!!")
 docs = loader.load()
 # print(type(docs))
 # print(docs[10:11])
