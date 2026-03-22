@@ -17,6 +17,7 @@ import re
 
 print("Loading the document...")
 loader = PyMuPDFLoader("Jeevanvidyas-guidance-to-students.pdf")
+print("Splitting the document...")
 splitter = RecursiveCharacterTextSplitter(chunk_size = 1200,chunk_overlap = 100)
 embeddings = OllamaEmbeddings(model="sam860/granite-embedding-english:125m-Q8_0")
 
